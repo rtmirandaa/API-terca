@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="minhaDiv">
+        Oi
+    </div>
+    <button onclick="alterar()">Alertar</button>
+    <button onclick="voltar()">Voltar</button>
+    <script>
+        var mDiv = document.getElementById("minhaDiv")
+        var conteudo = mDiv.innerHTML + " galerinha! <hr>";
+        mDiv.innerHTML = conteudo;
+        document.write("hii");
+        alert("Bem vindo");
+        console.log("escrevendo consolemente");
+
+        function voltar(){}
+        function alterar(){
+            mDiv.style.background="#DDD";
+            mDiv.style.width="50%"
+            mDiv.setAttribute("align" , "center");
+        }
+        
+    </script>
+</body>
+</html>
